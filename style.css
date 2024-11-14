@@ -1,0 +1,121 @@
+/* general styling */
+.title {
+	margin-bottom: 0;
+}
+.subtitle {
+	color: #757575;
+	margin-top: 0;
+}
+
+/* positional item things (bad name, idk) */
+.topBar {
+	width: 100%;
+	background: gray;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color: #FFFFFF;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	color: #1e1e1e;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.frontPage {
+	width: 100%;
+	aspect-ratio: 2.5/1;
+	background: #F5F5F5; /* fallback or something maybe */
+	background-image: url("./images/winter-alps-mountains-landscape-clouds.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+
+	display: flex;
+	justify-content: center; 
+	align-items: end;
+}
+
+.frontPage div.flex-container {
+	width:100%;
+	height:100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* horizontal center  */
+	align-items: center; /* vertical center */
+}
+
+.frontPage .subtitle {
+	color: white;
+	mix-blend-mode: difference;
+}
+
+.frontpage a.credits {
+	color: gray;
+	
+}
+
+.frontpage div.flex-container p, .frontpage div.flex-container h1 {
+	margin: 0;
+	text-align: center;
+}
+
+.aboutMe {
+	margin: 25px auto;
+	text-align: center;
+}
+
+.cardGrid.container {
+	background: #eee;
+	padding: 10px;
+	border-radius: 15px;
+
+	/* when using flex, cant space around and make it align from left to right
+	display: flex;
+	flex-flow: row wrap;
+
+	gap: 5px;
+	
+	justify-content: space-around;
+	align-content: space-around;
+	align-items: stretch;*/
+  	display: grid;
+  	grid-template-columns: repeat(3, 1fr);
+  	grid-gap: 20px;
+}
+
+.card {
+	background: white;
+	
+	border: 1px solid gray;
+	border-radius: 15px;
+	padding: 15px;
+}
+
+.cardContent {
+	margin: 0 auto;
+}
+
+img.cardContent {
+	width: 40%;
+	aspect-ratio: 1;
+}
+
+
+
+
