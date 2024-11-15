@@ -29,7 +29,8 @@ function makeCard(cardData, cardContainer) {
 	card.appendChild(description);
 
 	let link = document.createElement("a");
-	link.classList.add("cardContent")
+	link.classList.add("cardContent","link")
+	link.innerText = "Check out"
 	link.src = cardData.link
 	card.appendChild(link)
 	
