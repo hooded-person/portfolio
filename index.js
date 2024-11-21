@@ -7,32 +7,41 @@ function makeCard(cardData, cardContainer) {
 	if (!cardData.image && cardData.image == "") {
 		cardData.image="./images/personOutline.jpg"
 	}
-	
 	let card = document.createElement("div");
 	card.classList.add("card")
 	
+	let headerDiv = document.createElement("div")
+	headerDiv.classList.add("header")
+
 	let image = document.createElement("img");
 	image.classList.add("cardContent")
 	image.src = cardData.image;
-	card.appendChild(image);
+	headerDiv.appendChild(image);
 	
 	let title = document.createElement("h2");
 	title.classList.add("cardContent")
 	title.innerText = cardData.title;
-	card.appendChild(title);
+	headerDiv.appendChild(title);
 
-	card.appendChild( document.createElement("br") );
+	headerDiv.appendChild( document.createElement("br") );
 	
 	let description = document.createElement("p");
 	description.classList.add("cardContent","description")
 	description.innerText = cardData.description;
-	card.appendChild(description);
+	headerDiv.appendChild(description);
+
+
+	let linkDiv = document.createElement("div");
+	linkDiv.classList.add("link");
 
 	let link = document.createElement("a");
-	link.classList.add("cardContent","link")
-	link.innerText = "Check out"
-	link.src = cardData.link
-	card.appendChild(link)
+	link.classList.add("cardContent");
+	link.innerText = "Check out";
+	link.src = cardData.link;
+	linkDiv.appendChild(link);
+
+	card.appendChild(headerDiv)
+	card.appendChild(linkDiv);
 	
 	cardContainer.appendChild(card);
 }
