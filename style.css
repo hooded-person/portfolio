@@ -104,7 +104,12 @@
 	
 	border: 1px solid gray;
 	border-radius: 15px;
+}
+
+.card > .header {
+	border-radius: 15px;
 	padding: 15px;
+	padding-bottom: 0;
 }
 
 .cardContent {
@@ -115,7 +120,13 @@ img.cardContent {
 	width: 40%;
 	aspect-ratio: 1;
 }
-
+.card > .link {
+	width: 100%;
+	max-width: 100%;
+	padding: 5px 0;
+	border-top:1px solid gray;
+	text-align: center;
+}
 
 
 
