@@ -1,11 +1,11 @@
 /* general styling */
 body {
-	color: light-dark(black, white);
-	background: light-dark(white,#121212);
+	color: black;
+	background: white;
 }
 body[data-theme="dark"] {
-	color: light-dark(black, white);
-	background: light-dark(white,#121212);
+	color: white;
+	background: #121212;
 }
 .title {
 	margin-bottom: 0;
