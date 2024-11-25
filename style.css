@@ -1,15 +1,29 @@
 /* general styling */
 body {
-	color: black;
-	background: white;
+	--color: black;
+	--color2: #1e1e1e;
+	--background0: white;
+	--background1: #F5F5F5;
+	--background2: #EAEAEA;
+
+	color: var(--color);
+	background: var(--background0);
 }
 body[data-theme="dark"] {
-	color: white;
-	background: #121212;
+	--color: white;
+	--color2: #F5F5F5;
+	--background0: #121212;
+	--background1: #282828;
+	--background2: #3f3f3f;
+
+	color: var(--color);
+	background: var(--background0);
 }
 .title {
+	color: var(--color);
 	margin-bottom: 0;
 }
+
 .subtitle {
 	color: #757575;
 	margin-top: 0;
@@ -58,9 +72,15 @@ body[data-theme="dark"] {
 input:checked + .slider {
 	background-color: #2196F3;
 }
+input:checked+ .slider[data-theme="dark"] {
+	background-color: #3f3f3f;
+}
 
 input:focus + .slider {
 	box-shadow: 0 0 1px #2196F3;
+}
+input:focus + .slider[data-theme="dark"] {
+	box-shadow: 0 0 1px #3f3f3f;
 }
 
 input:checked + .slider:before {
@@ -82,7 +102,7 @@ transform: translateX(26px);
 /* positional item things (bad name, idk) */
 .topBar {
 	width: 100%;
-	background-color: #EAEAEA;
+	background-color: var(--background2);
 	overflow: hidden;
 	display: flex;
 	flex-wrap: nowrap;
@@ -103,7 +123,7 @@ transform: translateX(26px);
 /* Style the links inside the navigation bar */
 .topnav a {
 	float: left;
-	color: #1e1e1e;
+	color: var(--color2);
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -119,7 +139,7 @@ transform: translateX(26px);
 .frontPage {
 	width: 100%;
 	aspect-ratio: 2.5/1;
-	background: #F5F5F5; /* fallback or something maybe */
+	background: var(--background1); /* fallback or something maybe */
 	background-image: url("./images/winter-alps-mountains-landscape-clouds.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -159,7 +179,7 @@ transform: translateX(26px);
 }
 
 .cardGrid.container {
-	background: #eee;
+	background: var(--background0);
 	padding: 10px;
 	border-radius: 15px;
 
@@ -178,9 +198,9 @@ transform: translateX(26px);
 }
 
 .card {
-	background: white;
+	background: var(--background1);
 	
-	border: 1px solid gray;
+	/*border: 1px solid gray;*/
 	border-radius: 15px;
 }
 
@@ -197,6 +217,7 @@ transform: translateX(26px);
 img.cardContent {
 	width: 40%;
 	aspect-ratio: 1;
+	border-radius: 5%;
 }
 .card > .link {
 	width: 100%;
