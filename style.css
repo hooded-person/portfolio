@@ -5,6 +5,8 @@ body {
 	--background0: white;
 	--background1: #F5F5F5;
 	--background2: #EAEAEA;
+	
+	--themeIcon: url("./images/lightModeIcon.svg");
 
 	color: var(--color);
 	background: var(--background0);
@@ -15,6 +17,8 @@ body[data-theme="dark"] {
 	--background0: #121212;
 	--background1: #282828;
 	--background2: #3f3f3f;
+
+	--themeIcon: url("./images/darkModeIcon.svg");
 
 	color: var(--color);
 	background: var(--background0);
@@ -64,7 +68,13 @@ body[data-theme="dark"] {
 	width: 26px;
 	left: 4px;
 	bottom: 4px;
-	background-color: white;
+	background-color: var(--background0);
+
+	background-image: var(--themeIcon);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:90%;
+
 	-webkit-transition: .4s;
 	transition: .4s;
 }
@@ -86,7 +96,7 @@ input:focus + .slider[data-theme="dark"] {
 input:checked + .slider:before {
 	-webkit-transform: translateX(26px);
 	-ms-transform: translateX(26px);
-transform: translateX(26px);
+	transform: translateX(26px);
 }
 
 /* Rounded sliders */
@@ -97,7 +107,6 @@ transform: translateX(26px);
 .slider.round:before {
 	border-radius: 50%;
 }
-
 
 /* positional item things (bad name, idk) */
 .topBar {
@@ -223,7 +232,7 @@ img.cardContent {
 	width: 100%;
 	max-width: 100%;
 	padding: 10px 0;
-	border-top:1px solid gray;
+	border-top: 2px solid var(--background2);
 	text-align: center;
 }
 
