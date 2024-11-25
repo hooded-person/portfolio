@@ -33,12 +33,12 @@ function makeCard(cardData, cardContainer) {
 
 	let linkDiv = document.createElement("div");
 	linkDiv.classList.add("link");
+	linkDiv.addEventListener("click", (e) => window.open(cardData.link, '_blank').focus() );
 
-	let link = document.createElement("a");
-	link.classList.add("cardContent");
-	link.innerText = "Check out";
-	link.src = cardData.link;
-	linkDiv.appendChild(link);
+	let linkTxt = document.createElement("p");
+	linkTxt.classList.add("cardContent");
+	linkTxt.innerText = "Check out";
+	linkDiv.appendChild(linkTxt);
 
 	card.appendChild(headerDiv)
 	card.appendChild(linkDiv);
