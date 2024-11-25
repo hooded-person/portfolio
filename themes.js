@@ -1,43 +1,17 @@
-let colors = { // 0 is light mode; 1 is darkmode
-    txtColor: ["black", "white"],
-    backgroundBody: ["white", "#121212"],
-}
 const checkbox = document.getElementById("darkModeCheckbox")
-/*
-const root = document.querySelector(":root")
 
-let prop = {}
-prop.get = (property) => {
-    let computedStyle = getComputedStyle(root)
-    let propertyValue = computedStyle.getPropertyValue("--"+property)
-    console.log(propertyValue)
-    return propertyValue
-}
-prop.set = (property, value) => {
-    root.style.setProperty("--" + property, value)
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    // dark mode
+    checkbox.checked = true
+} else {
+    checkbox.checked = false
 }
 
-function toggleColors(colorMode) {
-    if (prop.get("mode") == colorMode) {
-        return false, "already applied", prop.get("mode")
-    }
-    
-    for (const [property, values] of Object.entries(colors)) {
-        let value = values[colorMode]
-        console.log(`${property}: ${value}`);
-    }
-    
-    prop.set("mode", colorMode)
-    return true, "applied new colors", prop.get("mode")
-}
-*/
+document.body.setAttribute("data-theme", checkbox.checked ? "dark" : "light")
 
 
 checkbox.addEventListener("change", (e)=>{
     console.log("darkmode was toggled")
-    /*
-    let success, msg, modeValue = toggleColors(Number(e.target.checked))
-    console.log(success, msg, modeValue)
-    */
-   document.body.setAttribute("data-theme", e.target.checked ? "dark" : "light")
+    
+    document.body.setAttribute("data-theme", e.target.checked ? "dark" : "light")
 })
