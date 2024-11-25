@@ -115,6 +115,14 @@ input:checked + .slider:before {
 }
 
 /* positional item things (bad name, idk) */
+.icon {
+	width:55px;
+	height:30px;
+	background: var(--color);
+	-webkit-mask-image: url("images/logo.svg");
+	mask-image: url("images/logo.svg");
+}
+
 .topBar {
 	width: 100%;
 	position: sticky; 
