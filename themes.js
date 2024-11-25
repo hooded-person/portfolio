@@ -3,8 +3,6 @@ const checkbox = document.getElementById("darkModeCheckbox")
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     // dark mode
     checkbox.checked = true
-} else {
-    checkbox.checked = false
 }
 
 document.body.setAttribute("data-theme", checkbox.checked ? "dark" : "light")
