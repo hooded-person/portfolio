@@ -26,10 +26,6 @@ body[data-theme="dark"] {
 	color: var(--color);
 	background: var(--background0);
 }
-* {
-	-webkit-transition: .4s;
-	transition: .4s;
-}
 
 .title {
 	color: var(--color);
