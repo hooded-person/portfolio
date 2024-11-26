@@ -1,0 +1,44 @@
+/* positional item things (bad name, idk) */
+.topBar {
+	width: 100%-10px;
+	position: sticky; 
+	top: 0; 
+	z-index: 9999;
+
+	background-color: var(--background2);
+
+	overflow: hidden;
+
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 5px;
+
+	padding: 0 5px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color: var(--background2);
+	overflow: hidden;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	flex-grow: 1;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	color: var(--color2);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: var(--background2_hover);
+	color: var(--color);
+}

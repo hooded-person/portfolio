@@ -1,0 +1,51 @@
+/* general styling */
+body {
+	--color: black;
+	--color2: #1e1e1e;
+	--background0: white;
+	--background1: #F5F5F5;
+	--background2: #EAEAEA;
+	--background2_hover: #ddd;
+	
+	--themeIcon: url("./images/lightModeIcon.svg");
+
+	color: var(--color);
+	background: var(--background0);
+	margin: 0;
+}
+body[data-theme="dark"] {
+	--color: white;
+	--color2: #F5F5F5;
+	--background0: #121212;
+	--background1: #2F2F2F;
+	--background2: #3f3f3f;
+	--background2_hover: #4C4C4C;
+
+	--themeIcon: url("./images/darkModeIcon.svg");
+
+	color: var(--color);
+	background: var(--background0);
+}
+
+.title {
+	color: var(--color);
+	margin-bottom: 0;
+}
+
+.subtitle {
+	color: #757575;
+	margin-top: 0;
+}
+
+.text {
+	margin: 0 5px;
+}
+
+/* show svg icon in current text color */
+.icon {
+	width:55px;
+	height:30px;
+	background: var(--color);
+	-webkit-mask-image: url("/images/logo.svg");
+	mask-image: url("/images/logo.svg");
+}
