@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="/styles/main.css">
         <link rel="stylesheet" href="/styles/switch.css">
 		<link rel="stylesheet" href="/styles/topBar.css">
+		<link rel="stylesheet" href="/styles/imgBanner+txt.css">
         <script> /* load eruda if ?eruda=true */
 			;(function () {
 			    var src = 'https://cdn.jsdelivr.net/npm/eruda'; //'https://cdn.jsdelivr.net/npm/eruda';
@@ -32,7 +33,13 @@
 			  <a href="#about">About</a>
 			</div>
 		</div>
-		<h1>HI</h1>
+		<div class="frontPage">
+			<div class="flex-container">
+				<h1 class="title">{project.name}</h1>
+				<p class="subtitle">{project.subtitle}</p>
+				<a class="credits text" href="{project.img.credit.link}">{project.img.credit.name}</a> <!--image credit-->
+			</div>
+		</div>
 		<script scrc="./index.js"></script>
 		<script src="/themes.js"></script>
 	</body>
