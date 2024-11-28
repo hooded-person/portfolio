@@ -49,3 +49,8 @@ body[data-theme="dark"] {
 	-webkit-mask-image: url("/images/logo.svg");
 	mask-image: url("/images/logo.svg");
 }
+
+/* text styling shit */
+.center {
+	text-align:center;
+}
