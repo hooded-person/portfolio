@@ -3,7 +3,6 @@
 	width: 100%;
 	aspect-ratio: 2.5/1;
 	background: var(--background1); /* fallback or something maybe */
-	background-image: url("./images/winter-alps-mountains-landscape-clouds.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 
