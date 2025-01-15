@@ -1,8 +1,12 @@
 .grid_img-text {
+    padding: 20px;
+
     display: grid;
     grid-template: 
         "img text" 
         / 2fr 3fr;
+
+    justify-items: center;
 }
 
 .grid_item-img {
@@ -10,11 +14,16 @@
 }
 .grid_item-text {
     grid-area: "text";
-    text-align: center;
+    text-align: left;
 }
 
 
 .img {
     border-radius: 30px;
-    padding: 15px;
+}
+
+.centerContentVertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
