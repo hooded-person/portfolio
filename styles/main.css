@@ -58,3 +58,9 @@ body[data-theme="dark"] {
 a.normal {
 	color: var(--color);
 }
+
+.container {
+	background-color: var(--background1);
+	border-radius: 15px;
+	padding: 10px;
+}
