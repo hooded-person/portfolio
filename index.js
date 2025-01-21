@@ -5,7 +5,7 @@ console.log("set all variables");
 
 function makeCard(cardData, cardContainer) {
 	if (!cardData.image && cardData.image == "") {
-		cardData.image="./images/personOutline.jpg"
+		cardData.image="./assets/personOutline.jpg"
 	}
 	let card = document.createElement("div");
 	card.classList.add("card")
