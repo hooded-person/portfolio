@@ -54,3 +54,7 @@ body[data-theme="dark"] {
 .center {
 	text-align:center;
 }
+
+a.normal {
+	color: var(--color);
+}
