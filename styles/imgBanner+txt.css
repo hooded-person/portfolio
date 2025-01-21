@@ -12,6 +12,7 @@ body[data-theme="dark"] {
 	background: var(--background1); /* fallback or something maybe */
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: contain;
 
 	filter: saturate(150%);
 
