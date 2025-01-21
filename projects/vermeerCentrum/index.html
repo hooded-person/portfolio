@@ -1,0 +1,59 @@
+<!-- /O&O portfolio/projects.empty.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>portfolio</title>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.svg"> <!-- to get a favicon from a defined site use https://www.google.com/s2/favicons?domain=<site> -->
+        <link rel="stylesheet" href="../styles.css">
+		<link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/switch.css">
+		<link rel="stylesheet" href="/styles/topBar.css">
+		<link rel="stylesheet" href="/styles/imgBanner+txt.css">
+        <script> /* load eruda if ?eruda=true */
+			;(function () {
+			    var src = 'https://cdn.jsdelivr.net/npm/eruda'; //'https://cdn.jsdelivr.net/npm/eruda';
+			    if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;	
+			    document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+			    document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+				( /notify/.test(window.location) ? [ console.log, alert ] : [ console.log ] ).forEach((el)=>el("eruda loaded"))
+			})();
+		</script>
+	</head>
+	<body>
+		<div class="topBar">
+			<a href="/"><img class="icon"></a> <!-- src="images/logo.svg" image is included in css as a mask so it changes with the main text color (couldn't find an better way) -->
+			<label class="switch" id="darkModeSwitch">
+				<input id="darkModeCheckbox" type="checkbox">
+				<span class="slider round"></span>
+			</label>
+			<div class="topnav">
+			  <a href="/">Home</a>
+			  <a href="#news">News</a>
+			  <a href="#contact">Contact</a>
+			  <a href="#about">About</a>
+			</div>
+		</div>
+		<div class="frontPage" style="
+		background-image: url('https://lh3.googleusercontent.com/p/AF1QipOztKEo6LIczzDAxjr7oQLtTEmNCnpGOgxyi4gx=s680-w680-h510');">
+			<div class="flex-container">
+				<h1 class="title">Vermeer centrum</h1>
+				<p class="subtitle">voor: <a href="https://www.vermeerdelft.nl/" class="normal">het Vermeer centrum</a></p>
+			</div>
+				<a class="credits text" href="https://www.google.com/maps/contrib/108336910223853836071/" target="_blank">wei</a>
+		</div>
+		<div class="grid_img-text">
+			<img class="img grid_item-img" src="/images/projects/vermeerCentrum/doos_binnenkant.jpg" />
+			<div class="centerContentVertical">
+				<p class="text grid_item-text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</div>
+
+		<div style="height: 1000px;">
+
+		</div>
+		<script scrc="./index.js"></script>
+		<script src="/themes.js"></script>
+	</body>
+</html>
