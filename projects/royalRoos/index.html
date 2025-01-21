@@ -1,0 +1,68 @@
+<!-- /O&O portfolio/projects.empty.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>portfolio</title>
+		<link rel="icon" type="image/x-icon" href="/assets/favicon.svg"> <!-- to get a favicon from a defined site use https://www.google.com/s2/favicons?domain=<site> -->
+        <link rel="stylesheet" href="../styles.css">
+		<link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/switch.css">
+		<link rel="stylesheet" href="/styles/topBar.css">
+		<link rel="stylesheet" href="/styles/imgBanner+txt.css">
+        <script> /* load eruda if ?eruda=true */
+			;(function () {
+			    var src = 'https://cdn.jsdelivr.net/npm/eruda'; //'https://cdn.jsdelivr.net/npm/eruda';
+			    if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;	
+			    document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+			    document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+				( /notify/.test(window.location) ? [ console.log, alert ] : [ console.log ] ).forEach((el)=>el("eruda loaded"))
+			})();
+		</script>
+	</head>
+	<body>
+		<div class="topBar">
+			<a href="/"><img class="icon"></a> <!-- src="assets/logo.svg" image is included in css as a mask so it changes with the main text color (couldn't find an better way) -->
+			<label class="switch" id="darkModeSwitch">
+				<input id="darkModeCheckbox" type="checkbox">
+				<span class="slider round"></span>
+			</label>
+			<div class="topnav">
+			  <a href="/">Home</a>
+			  <a href="#news">News</a>
+			  <a href="#contact">Contact</a>
+			  <a href="#about">About</a>
+			</div>
+		</div>
+		<div class="frontPage" style="
+		background-image: url('/assets/winter-alps-mountains-landscape-clouds.jpg');">
+			<div class="flex-container">
+				<h1 class="title">Royal Roos (3 vwo)</h1>
+				<p class="subtitle">voor: <a href="https://www.royalroos.com/">Royal Roos</a></p>
+			</div>
+				<a class="credits text" href=""></a>
+		</div>
+		<div class="grid_img-text">
+			<img class="img grid_item-img" src="/assets/projects/royalRoos/CradleLeftHigh.jpg" />
+			<div class="centerContentVertical">
+				<p class="grid_item-text">
+					Onze opdracht was om het ontwerp van het momentele prototype van 3D printbare cradles te verbeteren. Wij hebben dit gedaan door eerst te brainstormen over ideeën waarna wij in 3D software een model hebben gemaakt op basis van ons idee en het model dat wij moeten verbeteren. Dit hebben wij daarna uitgeprint en getest, waarna wij een nieuwe iteratie hebben gemaakt met meerdere verbeteringen. Ook dit model hebben wij weer getest. Ook hebben wij gekeken naar hoe wij ervoor kunnen zorgen dat er meerdere monopiles op elkaar kunnen worden gestapeld, hiervoor hebben wij een tweede cradle (oranje) geplaatst op de eerste (groen) waardoor er een tweede monopile kan worden opgelegd als de eerste eenmaal op zijn plaats ligt.
+				</p>
+				<p class="grid_item-text">
+					Voor onze eindpresentatie hebben wij een filmpje en een poster gemaakt.					
+				</p>
+			</div>
+		</div>
+
+		<div class="grid_img-text">
+			<img class="img grid_item-img" src="/assets/projects/royalRoos/posterRoyalRoos.png" />
+			<video width="100%" controls style="border-radius: 5px;">
+				<source src="/assets/projects/royalRoos/Eindfilmpje_O&O_Royal_Roos.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+
+		</div>
+		<script scrc="./index.js"></script>
+		<script src="/themes.js"></script>
+	</body>
+</html>

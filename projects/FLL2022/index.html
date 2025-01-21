@@ -1,0 +1,65 @@
+<!-- /O&O portfolio/projects.empty.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>portfolio</title>
+		<link rel="icon" type="image/x-icon" href="/assets/favicon.svg"> <!-- to get a favicon from a defined site use https://www.google.com/s2/favicons?domain=<site> -->
+        <link rel="stylesheet" href="../styles.css">
+		<link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/switch.css">
+		<link rel="stylesheet" href="/styles/topBar.css">
+		<link rel="stylesheet" href="/styles/imgBanner+txt.css">
+        <script> /* load eruda if ?eruda=true */
+			;(function () {
+			    var src = 'https://cdn.jsdelivr.net/npm/eruda'; //'https://cdn.jsdelivr.net/npm/eruda';
+			    if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;	
+			    document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+			    document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+				( /notify/.test(window.location) ? [ console.log, alert ] : [ console.log ] ).forEach((el)=>el("eruda loaded"))
+			})();
+		</script>
+	</head>
+	<body>
+		<div class="topBar">
+			<a href="/"><img class="icon"></a> <!-- src="assets/logo.svg" image is included in css as a mask so it changes with the main text color (couldn't find an better way) -->
+			<label class="switch" id="darkModeSwitch">
+				<input id="darkModeCheckbox" type="checkbox">
+				<span class="slider round"></span>
+			</label>
+			<div class="topnav">
+			  <a href="/">Home</a>
+			  <a href="#news">News</a>
+			  <a href="#contact">Contact</a>
+			  <a href="#about">About</a>
+			</div>
+		</div>
+		<div class="frontPage" style="
+		background-image: url('/assets/winter-alps-mountains-landscape-clouds.jpg');">
+			<div class="flex-container">
+				<h1 class="title">First Lego League - 2022 (2 vwo)</h1>
+				<p class="subtitle"><a href="https://www.firstlegoleague.org/">First Lego League</a></p>
+			</div>
+				<a class="credits text" href=""></a>
+		</div>
+		<div class="grid_img-text">
+			<img class="img grid_item-img" src="/assets/projects/FLL2022/robotSide.png" />
+			<div class="centerContentVertical">
+				<p class="grid_item-text">
+					In 2022 heb ik in vwo 2 voor het eerst me gedaan met de First Lego League. hiervoor hebben wij een robot gebouwt met Lego mindstorms EV3. Deze robot hebben wij daarna geprogrameerd om allerlij verschillende opdrachten te voltooien. Omdat het gedeeldte van mijn klas dat geinteresseerd was in de FLL groot was hebben wij dit gedaan in 2 groepjes, ik zat in team 2. Ons eind resultaat was dat als alle opdrachten goed gingen dat we dan maximaal 200 punten konden behalen met de programma's van beide teams gecombineerd.
+				</p>
+				<p class="grid_item-text">
+					Dit plan was uiteindelijk echter niet goed verlopen, omdat de samenwerking tussen beide teams slecht ging. Dit heeft er uiteindelijk tot geleid dat team 2 opnieuw is begonnen met de robot waarmee de samenwerkende teams mee waren begonnen en hier op verder is gaan bouwen. Team 2 heeft uiteindelijk de robot ontwerpprijs gewonnen, waarna team 1 van mening was dat team 2 hun ontwerp had gestolen.
+				</p>
+				<p class="grid_item-text">
+					Dit project was overal leuk, maar eindigde jammer genoeg met wat drama.
+				</p>
+			</div>
+		</div>
+
+		<div style="height: 1000px;">
+
+		</div>
+		<script scrc="./index.js"></script>
+		<script src="/themes.js"></script>
+	</body>
+</html>
