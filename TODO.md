@@ -1,4 +1,4 @@
-# Klasen
+# Klassen
 ## V1:                              
 - [ ] P1 | Voertuig van de toekomst | dibl
 - [ ] P2 | Technasium to the rescue | de klimaatmaat
@@ -12,6 +12,13 @@
 - [x] P2 | Royal Roos | Royal Roos, Maritiem Museum
 
 # projects to write
-- [ ] P3 | het vermeer centrum
-- [ ] P2 | First lego league | FLL
-- [ ] P2 | Royal Roos | Royal Roos, Maritiem Museum
+- [x] P3 | het vermeer centrum
+- [x] P2 | First lego league | FLL
+- [x] P2 | Royal Roos | Royal Roos, Maritiem Museum
+
+# other stuff (In order of prio)
+- [ ] Embed the drive video's
+- [ ] Fix project subtitle link colors
+- [ ] Migrate to svelte cause components
+- [ ] Add image carousel
+  - [ ] Implement for cradle images in project `royalRoos`
