@@ -6,13 +6,14 @@ body {
 	--background1: #F5F5F5;
 	--background2: #EAEAEA;
 	--background2_hover: #ddd;
-	
+
 	--themeIcon: url("./assets/lightModeIcon.svg");
 
 	color: var(--color);
 	background: var(--background0);
 	margin: 0;
 }
+
 body[data-theme="dark"] {
 	--color: white;
 	--color2: #F5F5F5;
@@ -43,8 +44,8 @@ body[data-theme="dark"] {
 
 /* show svg icon in current text color */
 .icon {
-	width:55px;
-	height:30px;
+	width: 55px;
+	height: 30px;
 	background: var(--color);
 	-webkit-mask-image: url("/assets/logo.svg");
 	mask-image: url("/assets/logo.svg");
@@ -52,15 +53,17 @@ body[data-theme="dark"] {
 
 /* text styling shit */
 .center {
-	text-align:center;
-}
-
-a.normal {
-	color: var(--color);
+	text-align: center;
 }
 
 .container {
 	background-color: var(--background1);
 	border-radius: 15px;
 	padding: 10px;
+}
+
+.transparantBackground {
+	padding: 5px;
+	border-radius: 5px;
+	background-color: hsl(from var(--background0) h s l / 50%);
 }
