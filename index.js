@@ -1,7 +1,15 @@
 	/*   /O&O portfolio/index.js  */
 console.log("running index.js");
 let cardContainer = document.getElementById("cardGrid");
+let classSpan = document.getElementById("Xvwo");
 console.log("set all variables");
+
+let startSchool = new Date("September 9, 2021 00:00:00")
+let currentDate = new Date()
+let remaining = new Date(currentDate - startSchool)
+let currentSchoolYear = remaining.getFullYear() - 1969
+classSpan.innerText = currentSchoolYear + " VWO"
+
 
 function makeCard(cardData, cardContainer) {
 	if (!cardData.image && cardData.image == "") {
