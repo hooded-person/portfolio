@@ -4,20 +4,20 @@
 		{
 			"title":"Vermeer centrum (1? vwo)",
 			"description":"Het Vermeer Centrum aantrekkelijker maken voor jongeren",
-			"image":"/assets/projects/vermeerCentrum/doos_binnenkant.jpg",
-			"link":"/projects/vermeerCentrum/index.html"
+			"image":"./assets/projects/vermeerCentrum/doos_binnenkant.jpg",
+			"link":"./projects/vermeerCentrum/index.html"
 		},
 		{
 			"title":"First Lego League - 2022 (2 vwo)",
 			"description":"Meedoen aan de First Lego League als O&O project",
-			"image":"/assets/projects/FLL2022/robotSide.png",
-			"link":"/projects/FLL2022/index.html"
+			"image":"./assets/projects/FLL2022/robotSide.png",
+			"link":"./projects/FLL2022/index.html"
 		},
 		{
 			"title":"Royal Roos (3 vwo)",
 			"description":"Ontwerpen herbruikbaar/recyclebaar vervoersysteem windmolen transport cradles",
-			"image":"/assets/projects/royalRoos/cradleFrontHigh.jpg",
-			"link":"/projects/royalRoos/index.html"
+			"image":"./assets/projects/royalRoos/cradleFrontHigh.jpg",
+			"link":"./projects/royalRoos/index.html"
 		}
 	]
 }

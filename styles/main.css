@@ -7,7 +7,7 @@ body {
 	--background2: #EAEAEA;
 	--background2_hover: #ddd;
 
-	--themeIcon: url("/assets/lightModeIcon.svg");
+	--themeIcon: url("../assets/lightModeIcon.svg");
 
 	color: var(--color);
 	background: var(--background0);
@@ -22,7 +22,7 @@ body[data-theme="dark"] {
 	--background2: #3f3f3f;
 	--background2_hover: #4C4C4C;
 
-	--themeIcon: url("/assets/darkModeIcon.svg");
+	--themeIcon: url("../assets/darkModeIcon.svg");
 
 	color: var(--color);
 	background: var(--background0);
@@ -47,8 +47,8 @@ body[data-theme="dark"] {
 	width: 55px;
 	height: 30px;
 	background: var(--color);
-	-webkit-mask-image: url("/assets/logo.svg");
-	mask-image: url("/assets/logo.svg");
+	-webkit-mask-image: url("../assets/logo.svg");
+	mask-image: url("../assets/logo.svg");
 }
 
 /* text styling shit */
