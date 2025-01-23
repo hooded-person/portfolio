@@ -2,7 +2,7 @@
 	"lastUpdated":-1,
 	"projects":[
 		{
-			"title":"Vermeer centrum (1? vwo)",
+			"title":"Vermeer centrum (1 vwo)",
 			"description":"Het Vermeer Centrum aantrekkelijker maken voor jongeren",
 			"image":"./assets/projects/vermeerCentrum/doos_binnenkant.jpg",
 			"link":"./projects/vermeerCentrum/index.html"
@@ -15,7 +15,7 @@
 		},
 		{
 			"title":"Royal Roos (3 vwo)",
-			"description":"Ontwerpen herbruikbaar/recyclebaar vervoersysteem windmolen transport cradles",
+			"description":"Ontwerpen herbruikbaar/recyclebaar vervoersysteem voor transport windmolen cradles",
 			"image":"./assets/projects/royalRoos/cradleFrontHigh.jpg",
 			"link":"./projects/royalRoos/index.html"
 		}
