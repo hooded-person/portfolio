@@ -2,13 +2,12 @@
     padding: 20px;
 
     display: grid;
-    grid-template: 
-        "img text" 
+    grid-template:
+        "img text"
         / 2fr 3fr;
 
     justify-items: center;
 }
-
 .grid_item-img {
     grid-area: "img";
     width: 75%;
@@ -17,7 +16,26 @@
     grid-area: "text";
     text-align: left;
 }
-
+@media screen and (max-width: 650px) {
+    .grid_img-text {
+        grid-template:
+            "text"
+            "img"
+            / 1fr;
+    }
+    .grid_item-img {
+        width: 65%;
+    }
+    video {
+        margin-top: 10px;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .grid_item-img {
+        width: 85%;
+    }
+}
 
 .img {
     border-radius: 30px;

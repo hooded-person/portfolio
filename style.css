@@ -17,19 +17,29 @@
 	justify-content: space-around;
 	align-content: space-around;
 	align-items: stretch;*/
-  	display: grid;
-  	grid-template-columns: repeat(3, 1fr);
-  	grid-gap: 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+@media screen and (max-width: 1000px) {
+	.cardGrid.container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (max-width: 500px) {
+	.cardGrid.container {
+		grid-template-columns: 1fr;
+	}
 }
 
 .card {
 	background: var(--background1);
-	
+
 	/*border: 1px solid gray;*/
 	border-radius: 15px;
 }
 
-.card > .header {
+.card>.header {
 	border-radius: 15px;
 	padding: 15px;
 	padding-bottom: 10px;
@@ -44,7 +54,8 @@ img.cardContent {
 	aspect-ratio: 1;
 	border-radius: 5%;
 }
-.card > .link {
+
+.card>.link {
 	width: 100%;
 	max-width: 100%;
 	padding: 10px 0;
@@ -52,9 +63,7 @@ img.cardContent {
 	text-align: center;
 	border-radius: 0 0 15px 15px;
 }
-.card > .link:hover {
+
+.card>.link:hover {
 	background-color: var(--background2);
 }
-
-
-

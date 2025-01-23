@@ -2,14 +2,17 @@
 body {
 	--creditLinkColor: #0000EE;
 }
+
 body[data-theme="dark"] {
 	--creditLinkColor: #3333FF;
 }
+
 /* items on page */
 .frontPage {
 	width: 100%;
 	aspect-ratio: 2.5/1;
-	background: var(--background1); /* fallback or something maybe */
+	background: var(--background1);
+	/* fallback or something maybe */
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -17,22 +20,36 @@ body[data-theme="dark"] {
 	filter: saturate(150%);
 
 	display: flex;
-	justify-content: center; 
+	justify-content: center;
 	align-items: end;
 
 	margin-bottom: 5px;
 }
-body[data-theme="dark"] > .frontPage {
+
+body[data-theme="dark"]>.frontPage {
 	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
 }
 
-.frontPage > div.flex-container {
-	width:100%;
-	height:100%;
+.frontPage>div.flex-container {
+	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center; /* horizontal center  */
-	align-items: center; /* vertical center */
+	justify-content: center;
+	/* horizontal center  */
+	align-items: center;
+	/* vertical center */
+}
+
+.frontPage>div.flex-container>.transparentBackground {
+	font-size: 2vw;
+}
+
+@media screen and (max-width: 500px) {
+	.frontPage>div.flex-container>.transparentBackground {
+		max-width: 50%;
+		font-size: 2.5vw;
+	}
 }
 
 .frontPage .subtitle {
@@ -40,14 +57,15 @@ body[data-theme="dark"] > .frontPage {
 	mix-blend-mode: difference;
 }
 
-.frontPage > a.credits {
+.frontPage>a.credits {
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	bottom: 0px;
+	right: 0px;
 	color: var(--creditLinkColor);
 }
 
-.frontPage div.flex-container p, .frontPage div.flex-container h1 {
+.frontPage div.flex-container p,
+.frontPage div.flex-container h1 {
 	margin: 0;
 	text-align: center;
 }
