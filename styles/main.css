@@ -67,3 +67,15 @@ body[data-theme="dark"] {
 	border-radius: 5px;
 	background-color: hsl(from var(--background0) h s l / 50%);
 }
+
+.centerContentVertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.centerContentHorizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
