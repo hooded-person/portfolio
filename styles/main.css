@@ -11,7 +11,7 @@ body {
 
 	color: var(--color);
 	background: var(--background0);
-	margin: 0;
+	margin: 0 0 15px 0;
 }
 
 body[data-theme="dark"] {
