@@ -64,7 +64,7 @@ body[data-theme="dark"] {
 
 .transparentBackground {
 	padding: 5px;
-	border-radius: 5px;
+	border-radius: 7.5px;
 	background-color: hsl(from var(--background0) h s l / 50%);
 }
 

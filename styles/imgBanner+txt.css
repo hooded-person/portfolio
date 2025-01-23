@@ -42,7 +42,8 @@ body[data-theme="dark"]>.frontPage {
 }
 
 .frontPage>div.flex-container>.transparentBackground {
-	font-size: 1.5vw;
+	font-size: 1vw;
+	padding: .75em
 }
 
 @media screen and (max-width: 600px) {
