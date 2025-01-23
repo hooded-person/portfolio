@@ -17,8 +17,9 @@
 - [x] P2 | Royal Roos | Royal Roos, Maritiem Museum
 
 # other stuff (In order of prio)
-- [ ] Embed the drive video's
-- [ ] Fix project subtitle link colors
+- [x] Embed the drive video's
+- [x] Fix project subtitle link colors
+- [ ] Replace placeholder banner image for `FLL2022`
 - [ ] Migrate to svelte cause components
 - [ ] Add image carousel
   - [ ] Implement for cradle images in project `royalRoos`
