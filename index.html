@@ -3,63 +3,66 @@
 
 <html>
 
-	<head>
-		<title>portfolio</title>
+<head>
+	<title>portfolio</title>
 	<link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
 	<!-- to get a favicon from a defined site use https://www.google.com/s2/favicons?domain=<site> -->
-		<link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="/styles/main.css">
-        <link rel="stylesheet" href="/styles/switch.css">
-		<link rel="stylesheet" href="/styles/topBar.css">
-		<link rel="stylesheet" href="/styles/imgBanner+txt.css">
-		<script> /* load eruda if ?eruda=true */
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="/styles/main.css">
+	<link rel="stylesheet" href="/styles/switch.css">
+	<link rel="stylesheet" href="/styles/topBar.css">
+	<link rel="stylesheet" href="/styles/imgBanner+txt.css">
+	<script> /* load eruda if ?eruda=true */
 		; (function () {
-			    var src = 'https://cdn.jsdelivr.net/npm/eruda'; //'https://cdn.jsdelivr.net/npm/eruda';
-			    if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;	
-			    document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
-			    document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+			var src = 'https://cdn.jsdelivr.net/npm/eruda'; //'https://cdn.jsdelivr.net/npm/eruda';
+			if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+			document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+			document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
 			(/notify/.test(window.location) ? [console.log, alert] : [console.log]).forEach((el) => el("eruda loaded"))
-			})();
-		</script>
-	</head>
+		})();
+	</script>
+</head>
 
-	<body>
-		<div class="topBar">
+<body>
+	<div class="topBar">
 		<a href="/"><img class="icon"></a>
 		<!-- src="assets/logo.svg" image is included in css as a mask so it changes with the main text color (couldn't find an better way) -->
-			<label class="switch" id="darkModeSwitch">
-				<input id="darkModeCheckbox" type="checkbox">
-				<span class="slider round"></span>
-			</label>
-			<div class="topnav">
-			  <a href="/">Home</a>
-			  <a href="#news">News</a>
-			  <a href="#contact">Contact</a>
-			  <a href="#about">About</a>
-			</div>
+		<label class="switch" id="darkModeSwitch">
+			<input id="darkModeCheckbox" type="checkbox">
+			<span class="slider round"></span>
+		</label>
+		<div class="topnav">
+			<a href="/">Home</a>
+			<a href="#news">News</a>
+			<a href="#contact">Contact</a>
+			<a href="#about">About</a>
 		</div>
-		<div class="frontPage" style="
+	</div>
+	<div class="frontPage" style="
 	background-image: url('/assets/winter-alps-mountains-landscape-clouds.jpg');">
-			<div class="flex-container">
-				<h1 class="title">Niels Groen</h1>
-				<p class="subtitle">4 VWO</p>
-			</div>
-			<a class="credits text" href="https://pix4free.org/">Pix4free</a> <!--image credit-->
+		<div class="flex-container">
+			<h1 class="title">Niels Groen</h1>
+			<p class="subtitle" id="Xvwo">4 VWO</p>
 		</div>
-		<p class="aboutMe">
-			<h1 class="title text">about me</h1>
-			Ik ben Niels Groen, een leerling uit <span id="Xvwo"></span>. Ik ben fan van programmeren, ik kan python, js, html, css en lua.<br>
+		<a class="credits text" href="https://pix4free.org/">Pix4free</a> <!--image credit-->
+	</div>
+	<div class="centerContentHorizontal">
+		<h1 class="title text">about me</h1>
+		<p class="center">
+			Ik ben Niels Groen, een leerling uit <span id="Xvwo"></span>. <br>
+			Ik ben fan van programmeren, ik kan python, js, html, css en lua.<br>
 			<br>
-			Ik hou van wiskunde en puzzeltjes<br>	
+			Ik hou van wiskunde en puzzeltjes<br>
 		</p>
-		<div class="cardGrid main">
-			<h1 class="title text">My projects</h1>
-			<div class="cardGrid container" id="cardGrid">
-				
-			</div>
+	</div>
+	<div class="cardGrid main">
+		<h1 class="title text">My projects</h1>
+		<div class="cardGrid container" id="cardGrid">
+
 		</div>
-		<script src="./index.js"></script>
-		<script src="/themes.js"></script>
-	</body>
+	</div>
+	<script src="./index.js"></script>
+	<script src="/themes.js"></script>
+</body>
 
 </html>
