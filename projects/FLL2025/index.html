@@ -1,0 +1,68 @@
+<!-- /O&O portfolio/projects.empty.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>First Lego League - 2022 | portfolio</title>
+	<link rel="icon" type="image/x-icon" href="../../assets/favicon.svg">
+	<!-- to get a favicon from a defined site use https://www.google.com/s2/favicons?domain=<site> -->
+	<link rel="stylesheet" href="../styles.css">
+	<link rel="stylesheet" href="../../styles/main.css">
+	<link rel="stylesheet" href="../../styles/switch.css">
+	<link rel="stylesheet" href="../../styles/topBar.css">
+	<link rel="stylesheet" href="../../styles/imgBanner+txt.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<script> /* load eruda if ?eruda=true */
+		; (function () {
+			var src = 'https://cdn.jsdelivr.net/npm/eruda'; //'https://cdn.jsdelivr.net/npm/eruda';
+			if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+			document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+			document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+			(/notify/.test(window.location) ? [console.log, alert] : [console.log]).forEach((el) => el("eruda loaded"))
+		})();
+	</script>
+</head>
+
+<body>
+	<div class="topBar">
+		<a href="../../"><img class="icon"></a>
+		<!-- src="assets/logo.svg" image is included in css as a mask so it changes with the main text color (couldn't find an better way) -->
+		<label class="switch" id="darkModeSwitch">
+			<input id="darkModeCheckbox" type="checkbox">
+			<span class="slider round"></span>
+		</label>
+		<div class="topnav">
+			<a href="../../">Home</a>
+			<a href="#news">News</a>
+			<a href="#contact">Contact</a>
+			<a href="#about">About</a>
+		</div>
+	</div>
+	<div class="frontPage" style="
+		background-image: url('../../assets/winter-alps-mountains-landscape-clouds.jpg');">
+		<div class="flex-container">
+			<div class="transparentBackground">
+				<h1 class="title">First Lego League - 2025 (4 vwo)</h1>
+				<p class="subtitle">Door: Ruben Stiefelhagen, Rutger Witvoet, <br>Niels Groen & Tristan de Pauw</p>
+				<p class="subtitle"><a href="https://www.firstlegoleague.org/" style="color: inherit;">First Lego
+						League</a></p>
+			</div>
+		</div>
+		<a class="credits text" href="https://pix4free.org/">Pix4free</a>
+	</div>
+	<div class="grid_img-text">
+		<img src="../../assets/projects/FLL2025/teamSidLogo.png" style="position: absolute; top: 0;right:0; width: 15%;">
+		<img class="img grid_item-img" src="../../assets/projects/FLL2025/robot.png" />
+		<div class="centerContentVertical">
+			<p class="grid_item-text">
+				TODO
+			</p>
+		</div>
+	</div>
+
+	</div>
+	<script scrc="./index.js"></script>
+	<script src="../../themes.js"></script>
+</body>
+
+</html>

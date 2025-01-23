@@ -19,7 +19,10 @@
 # other stuff (In order of prio)
 - [x] Embed the drive video's
 - [x] Fix project subtitle link colors
+- [ ] Add text for project `FLL2025`
+  - [ ] Add logo img under `/assets/projects/FLL2025/teamSidLogo.png`
 - [ ] Replace placeholder banner image for `FLL2022`
 - [ ] Migrate to svelte cause components
 - [ ] Add image carousel
+  - [ ] Implement for robot images in project `FLL2025`
   - [ ] Implement for cradle images in project `royalRoos`
